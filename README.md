@@ -1,2 +1,2 @@
-# hello-world
-All the basic code written in C/C++ Language.
+# Programming in C/C++
+All the basic essential code.

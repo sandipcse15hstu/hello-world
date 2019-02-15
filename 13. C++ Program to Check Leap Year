@@ -1,0 +1,31 @@
+/// Sandipan Roy ......
+///Hajee Mohammad Danesh Science & Technology University,Dinajpur-5200
+/// Dept. of Computer Science And Engineering
+/// Student ID: 1502022  Session: 2015
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int year;
+
+    cout << "Enter a year: ";
+    cin >> year;
+
+    if (year % 4 == 0)
+    {
+        if (year % 100 == 0)
+        {
+            if (year % 400 == 0)
+                cout << year << " is a leap year.";
+            else
+                cout << year << " is not a leap year.";
+        }
+        else
+            cout << year << " is a leap year.";
+    }
+    else
+        cout << year << " is not a leap year.";
+
+    return 0;
+}

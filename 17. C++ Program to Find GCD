@@ -1,0 +1,38 @@
+/// Sandipan Roy ......
+///Hajee Mohammad Danesh Science & Technology University,Dinajpur-5200
+/// Dept. of Computer Science And Engineering
+/// Student ID: 1502022  Session: 2015
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n1, n2;
+
+    cout << "Enter two numbers: ";
+    cin >> n1 >> n2;
+
+    while(n1 != n2)
+    {
+        if(n1 > n2)
+            n1 -= n2;
+        else
+            n2 -= n1;
+    }
+
+    cout << "HCF = " << n1;
+
+    /// Or you can do this in the other way
+
+    int a,b,gcd,temp;
+    cout <<endl <<  "Enter two integer: ";
+    cin >> a >> b;
+    while(b != 0){
+        temp = b;
+        b = a % b;
+        a = temp;
+    }
+    gcd = a;
+    cout << "GCD of the numbers is = " << gcd << endl;
+    return 0;
+}

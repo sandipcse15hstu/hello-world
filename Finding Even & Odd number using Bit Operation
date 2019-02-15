@@ -1,0 +1,17 @@
+/// Sandipan Roy ......
+///Hajee Mohammad Danesh Science & Technology University,Dinajpur-5200
+/// Dept. of Computer Science And Engineering
+/// Student ID: 1502022  Session: 2015
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    int n , test = 1;
+    cout << "Enter the Integer : "
+    scanf("%d",&n);
+    if(n & test)
+        cout << "Odd" << endl;
+    else
+        cout << "Even " << endl;
+}

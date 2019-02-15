@@ -1,0 +1,47 @@
+/// Sandipan Roy ......
+///Hajee Mohammad Danesh Science & Technology University,Dinajpur-5200
+/// Dept. of Computer Science And Engineering
+/// Student ID: 1502022  Session: 2015
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n1, n2, max;
+
+    cout << "Enter two numbers: ";
+    cin >> n1 >> n2;
+
+    // maximum value between n1 and n2 is stored in max
+    max = (n1 > n2) ? n1 : n2;
+
+    do
+    {
+        if (max % n1 == 0 && max % n2 == 0)
+        {
+            cout << "LCM = " << max;
+            break;
+        }
+        else
+            ++max;
+    } while (true);
+
+
+        /// Or you can do this in the other way
+
+    int a,b,gcd,temp,lcm;
+    cout <<endl <<  "Enter two integer: ";
+    cin >> a >> b;
+    n1 = a;
+    n2 = b;
+    while(b != 0){
+        temp = b;
+        b = a % b;
+        a = temp;
+    }
+    gcd = a;
+    lcm = (n1 * n2) / gcd;
+    cout << "LCM of the numbers is = " << lcm << endl;
+
+    return 0;
+}

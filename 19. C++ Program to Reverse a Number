@@ -1,0 +1,27 @@
+/// Sandipan Roy ......
+///Hajee Mohammad Danesh Science & Technology University,Dinajpur-5200
+/// Dept. of Computer Science And Engineering
+/// Student ID: 1502022  Session: 2015
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, reversedNumber = 0, remainder;
+
+    cout << "Enter an integer: ";
+    cin >> n;
+
+    while(n != 0)
+    {
+        remainder = n%10;
+        ///printf("%d * 10 + %d\n", reversedNumber,remainder);
+        reversedNumber = reversedNumber*10 + remainder;
+        n /= 10;
+    }
+
+    cout << "Reversed Number = " << reversedNumber;
+
+    return 0;
+}

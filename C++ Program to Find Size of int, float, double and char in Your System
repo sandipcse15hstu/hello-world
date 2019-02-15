@@ -1,0 +1,16 @@
+/// Sandipan Roy ......
+///Hajee Mohammad Danesh Science & Technology University,Dinajpur-5200
+/// Dept. of Computer Science And Engineering
+/// Student ID: 1502022  Session: 2015
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Size of char: " << sizeof(char) << " byte" << endl;
+    cout << "Size of int: " << sizeof(int) << " bytes" << endl;
+    cout << "Size of float: " << sizeof(float) << " bytes" << endl;
+    cout << "Size of double: " << sizeof(double) << " bytes" << endl;
+
+    return 0;
+}

@@ -1,0 +1,33 @@
+/// Sandipan Roy ......
+///Hajee Mohammad Danesh Science & Technology University,Dinajpur-5200
+/// Dept. of Computer Science And Engineering
+/// Student ID: 1502022  Session: 2015
+/*A positive integer is called an Armstrong number if the sum of cubes of individual digit is equal to that number itself.
+For example:
+153 = 1 * 1 * 1 + 5 * 5 * 5 + 3 * 3 * 3  // 153 is an Armstrong number.
+12 is not equal to 1 * 1 * 1 + 2 * 2 * 2  // 12 is not an Armstrong number.*/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int origNum, num, rem, sum = 0;
+  cout << "Enter a positive  integer: ";
+  cin >> origNum;
+
+  num = origNum;
+
+  while(num != 0)
+  {
+      rem = num % 10;
+      sum += rem * rem * rem;
+      num /= 10;
+  }
+
+  if(sum == origNum)
+    cout << origNum << " is an Armstrong number.";
+  else
+    cout << origNum << " is not an Armstrong number.";
+
+  return 0;
+}
